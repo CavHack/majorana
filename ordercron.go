@@ -1,5 +1,5 @@
 
-package zama-monte-mod
+package majorana
 
 
 
