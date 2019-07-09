@@ -44,6 +44,12 @@ type OrderSorter struct {
 
 type Shelf struct {
     
+    for m, _ := time.ParseDuration("0m59s")
+	fmt.Printf("order dispatched in t-%.0f seconds.", m.Seconds()
+    //orders come in as a function of time.
+    //time roundoff of 59 nanoseconds.
+    orders map[*Order]time.Time
+    
 }
 
 type Seconds time.Duration
