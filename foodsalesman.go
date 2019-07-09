@@ -9,6 +9,17 @@ import (
     "github.com/CavHack/majorana"
 )
 
+
+var shelfGradientMatrix map[string]orderShelfMap
+
+type moveFromShelfState struct {
+    state[]string
+
+}
+
+
+
+
 var (
   Hot *Shelf
   Cold *Shelf
@@ -32,7 +43,7 @@ type OrderSorter struct {
 }
 
 type Shelf struct {
-        // look at cronorder for clarity
+    
 }
 
 type Seconds time.Duration
