@@ -10,6 +10,19 @@ import (
 )
 
 
+
+
+
+
+type OrderState interface {
+	Mirror() interface{} //return the address of the order
+	Translate() //move to another phase
+	Energy() float64 //energy here is hamiltonian.
+
+
+}
+
+
 var shelfGradientMatrix map[string]orderShelfMap
 
 type moveFromShelfState struct {
@@ -36,6 +49,8 @@ var (
 
         Shelf *Shelf
 }
+
+Shelf 
 
 type OrderSorter struct {
     orders []Order
